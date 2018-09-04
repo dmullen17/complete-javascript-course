@@ -1,20 +1,20 @@
 ///////////////////////////////////////
 // Lecture: Hoisting
 
+calculateAge(1990);
 
+function calculateAge(year) {
+    console.log(2018 - year);
+}
 
+// Hoisting - global function execution happens first. You can define functions after you use them 
+// hoisting doesn't work for a function expression (i.e.) declaring it a variable with 'var'
 
-
-
-
-
-
-
-
-
-
-
-
+//this doesn't work 
+//x(1990)
+var x = function(year) {
+    console.log(2018 - year);
+}
 
 
 ///////////////////////////////////////
@@ -22,8 +22,8 @@
 
 
 // First scoping example
+// lexical scoping - each function has access to the outer (parent) scope
 
-/*
 var a = 'Hello!';
 first();
 
@@ -36,7 +36,6 @@ function first() {
         console.log(a + b + c);
     }
 }
-*/
 
 
 
