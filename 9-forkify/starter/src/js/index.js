@@ -63,8 +63,10 @@ open filename --> opens a file using a text editor
 
 // test that webpack is working 
 // we exported 23 from the test.js module 
+console.log('hello fuckers!');
 import num from './test'; 
-console.log(`I imported ${num} from another module!`);
+const x = 23; 
+console.log(`I imported ${num} from another module! Variable x is ${x}`);
 // need to add an npm script to our package.json file. 
 // add this to package.json file: 
 /*  "scripts": {
